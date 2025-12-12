@@ -1,0 +1,141 @@
+name: shia_book
+description: مجموعة شاملة من الكتب الشيعية الإسلامية
+publish_to: 'none'
+version: 1.0.0+1
+
+environment:
+  sdk: '>=3.0.0 <4.0.0'
+
+dependencies:
+  flutter:
+    sdk: flutter
+  quran_library: ^1.0.3
+  
+  # State Management
+  get: ^4.6.6
+  adhan: ^2.0.0+1
+  
+  # UI Components
+  velocity_x: ^4.3.1  # Compatible with Flutter 3.x
+  flutter_svg: ^2.0.10+1  # Compatible with Flutter 3.x
+  
+  # Storage
+  shared_preferences: ^2.2.2
+  sqflite: ^2.3.2
+  
+  # Audio
+  just_audio: ^0.10.4
+  audio_session: ^0.2.2
+  just_audio_background: ^0.0.1-beta.17
+  audio_service: ^0.18.18
+  #rx_dart: ^0.27.7
+  path: ^1.8.3
+  
+  # Notifications
+  flutter_local_notifications: ^19.2.1  # Latest stable version
+  timezone: ^0.10.1  # Latest stable version
+  permission_handler: ^11.3.0  # Keep at current version to avoid breaking changes
+  
+  # Networking
+  http: ^1.4.0
+  dio: ^5.8.0+1
+  
+  # Utils
+  intl: ^0.20.2  # Required by velocity_x
+  share_plus: ^7.2.2
+  url_launcher: ^6.2.2
+  package_info_plus: ^8.3.0  # Updated to latest stable
+  device_info_plus: ^11.1.0  # Updated to latest stable
+  flutter_cache_manager: ^3.3.1  # For caching audio files
+  
+  
+  # PDF and Documents
+  pdf: ^3.10.7
+  printing: ^5.11.1
+  
+  # Fonts and Text
+  google_fonts: ^6.1.0
+  quran_sharif: ^1.0.0
+  auto_size_text: ^3.0.0
+  
+  # Animation
+  lottie: ^3.3.1  # Updated to latest stable
+  flutter_staggered_animations: ^1.1.1
+  
+  # Charts and Graphs
+  fl_chart: ^0.65.0  # Latest stable version for Flutter 3.x
+  
+  # Image Handling
+  cached_network_image: ^3.3.0
+  image_picker: ^1.0.4
+  
+  # Audio (for Quran recitation)
+  audioplayers: ^6.4.0  # Latest stable version for Flutter 3.x
+  
+  # Fix for velocity_x dependencies
+  meta: ^1.8.0  # Required by Flutter 3.x
+  
+  # Calendar
+  table_calendar: ^3.0.9
+  hijri: ^3.0.0
+  
+  # Barcode/QR
+  qr_flutter: ^4.1.0
+  qr_code_scanner: ^1.0.1
+  geolocator: ^14.0.1
+  quran: ^1.3.3
+  rxdart: ^0.28.0
+  
+  cupertino_icons: ^1.0.8
+  path_provider: ^2.1.5
+  calendar_events: ^1.0.5
+  geocoding: ^4.0.0
+  flutter_compass: ^0.8.1
+  flutter_map: ^8.1.1
+  latlong2: ^0.9.1
+  rive: ^0.11.5
+  #calendar_events: ^0.3.0  # لمزامنة الأحداث مع تقويم الجهاز
+
+dev_dependencies:
+  flutter_test:
+    sdk: flutter
+  flutter_lints: ^5.0.0
+  build_runner: ^2.4.7
+
+flutter:
+  uses-material-design: true
+  
+  assets:
+    - assets/
+    - assets/animations/
+    - assets/icons/
+    - assets/images/
+    - assets/fonts/
+    - assets/audio/
+    - assets/data/duas/
+    - assets/data/ziyarat/
+    - assets/data/ziyarat/ziyarat.json
+    - assets/data/events/islamic_events.json
+    - assets/audio/adhan.mp3
+  
+  # fonts:
+  #   - family: Amiri
+  #     fonts:
+  #       - asset: fonts/Amiri-Regular.ttf
+  #       - asset: fonts/Amiri-Bold.ttf
+  #         weight: 700
+  #   - family: Scheherazade
+  #     fonts:
+  #       - asset: fonts/Scheherazade-Regular.ttf
+  #       - asset: fonts/Scheherazade-Bold.ttf
+  #         weight: 700
+  #   - family: Cairo
+  #     fonts:
+  #       - asset: fonts/Cairo-Regular.ttf
+  #       - asset: fonts/Cairo-Bold.ttf
+  #         weight: 700
+  #   - family: Noto Sans Arabic
+  #     fonts:
+  #       - asset: fonts/NotoSansArabic-Regular.ttf
+  #       - asset: fonts/NotoSansArabic-Bold.ttf
+  #         weight: 700
